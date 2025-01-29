@@ -20,6 +20,7 @@ function partition(arr: number[], low: number, hi: number) : number {
   let idx = low-1;
   //only take the range from low to high
   for (let i = low; i < hi; ++i) {
+    //when the value of idx is larger and i is smaller then pivot then swap
     if (arr[i] <= pivot) {
       // when it is actually smaller swap it with a larger value on the left side
       idx++;

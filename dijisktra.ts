@@ -1,3 +1,5 @@
+declare type GraphEdge = { to: number; weight: number };
+declare type WeightedAdjacencyList = GraphEdge[][];
 function hasUnvisited(seen: boolean[], dists: number[]): boolean {
   return seen.some((s, i) => !s && dists[i] < Infinity )
 

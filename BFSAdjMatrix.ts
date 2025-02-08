@@ -1,3 +1,4 @@
+declare type WeightedAdjacencyMatrix = number[][]; // A number means weight
 export default function bfs(
     graph: WeightedAdjacencyMatrix,
     source: number,
